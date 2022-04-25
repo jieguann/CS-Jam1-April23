@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2242440131276538002}
   - component: {fileID: 4129513446636740746}
   - component: {fileID: 2481445756718635299}
-  - component: {fileID: 8415511208839096312}
+  - component: {fileID: 5270173110909220208}
   m_Layer: 0
-  m_Name: SonjaCube
+  m_Name: SonjaCubeGlimmCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2242440131276538003}
-  m_LocalRotation: {x: -0.08344583, y: 0.27791512, z: -0.2752004, w: 0.91655046}
+  m_LocalRotation: {x: -0.08344818, y: 0.27791825, z: -0.2752042, w: 0.9165482}
   m_LocalPosition: {x: 0, y: 0, z: 4.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -108,7 +108,7 @@ Animator:
   m_GameObject: {fileID: 2242440131276538003}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 621b3c5682a924e869f6784932ce18b1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -133,7 +133,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8415511208839096312
+--- !u!114 &5270173110909220208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,19 +145,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0593be8ba0e44f6ac9c894ef58d7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleSpeed: 3
-  turnSpeed: 3
-  switchSeconds: 1
+  idleSpeed: 1
+  turnSpeed: 1
+  switchSeconds: 2
   idleRatio: 1
-  animSpeedMinMax: {x: 1, y: 3}
+  animSpeedMinMax: {x: 1, y: 5}
   moveSpeedMinMax: {x: 1, y: 5}
   changeAnimEveryFromTo: {x: 1, y: 2}
-  changeTargetEveryFromTo: {x: 1, y: 2}
-  homeTarget: {fileID: 0}
-  flyingTarget: {fileID: 0}
-  radiusMinMax: {x: 0, y: 0}
-  yMinMax: {x: 0, y: 0}
-  returnToBase: 0
-  randomBaseOffset: 5
-  delayStart: 0
-  changeTarget: 0
+  changeTargetEveryFromTo: {x: 1, y: 5}
+  homeTarget: {fileID: 2433799302937825075, guid: f18f0c254447f4957a8f541830febef2, type: 3}
+  flyingTarget: {fileID: 1933119990784133567, guid: e42132402491f4bd18fe840f02bb49f2, type: 3}
+  radiusMinMax: {x: 0.01, y: 0.05}
+  yMinMax: {x: 0.01, y: 0.05}
+  returnToBase: 1
+  randomBaseOffset: 1
+  delayStart: 0.5
+  changeTarget: 0.3
