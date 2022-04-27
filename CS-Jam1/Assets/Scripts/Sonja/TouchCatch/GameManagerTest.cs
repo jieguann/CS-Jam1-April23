@@ -8,13 +8,13 @@ using UnityEngine.UI;
 
 public class GameManagerTest : MonoBehaviour
 {
-    public List<GameObject> targets;
+    //public List<GameObject> targets;
     // scoreText
     // gameOverText
-    public Button restartButton;
-    public GameObject titleScreen;
+    // public Button restartButton;
+    public GameObject entranceCanvas;
 
-    public bool isGameActive;
+    bool isGameActive;
 
     // private int score;
     private float spawnRate = 1.0f;
@@ -35,15 +35,19 @@ public class GameManagerTest : MonoBehaviour
         
     }
 
+    
+
     IEnumerator SpawnTarget()
     {
         while (isGameActive)
         {
             yield return new WaitForSeconds(spawnRate); // controls time between spawns
-            int index = Random.Range(0, targets.Count); // get random object from list
-            Instantiate(targets[index]);            
+            //int index = Random.Range(0, targets.Count); // get random object from list
+            //Instantiate(targets[index]);            
         }
     }
+
+    /*
 
     public void GameOver()
     {
@@ -52,10 +56,12 @@ public class GameManagerTest : MonoBehaviour
         // isGameActive(false);
     }
 
+    
     public void RestartGame()
     {
         
     }
+    */
 
     public void StartGame(int level)
     {
@@ -65,8 +71,8 @@ public class GameManagerTest : MonoBehaviour
 
         StartCoroutine(SpawnTarget());
 
-        titleScreen.gameObject.SetActive(false);
+        entranceCanvas.gameObject.SetActive(false);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(level);
     }
 }

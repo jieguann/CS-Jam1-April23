@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GlimmWimm.unity
     guid: 40d440c954120af44a7b950075e1cb7d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GlimmWimmEntrance.unity
     guid: 363d9c8d2e2bf44a187e26975c822a0e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SonjaTestScene.unity
     guid: 915f4b7a5915444d582067091cb2753b
   m_configObjects:
