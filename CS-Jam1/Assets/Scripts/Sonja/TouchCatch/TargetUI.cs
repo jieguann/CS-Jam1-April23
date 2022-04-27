@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class TargetUI : MonoBehaviour
 {
-    [SerializeField] private Rigidbody targetRb;
-    [SerializeField] GameManager gameManagerTEST;
+    [SerializeField] public Rigidbody targetRb;
+    public GameManagerTest gameManagerTEST;
 
-    private float minSpeed = 12f;
-    private float maxSpeed = 16f;
-    private float maxTorque = 10f;
-    private float xRange = 4f;
-    private float ySpawnPos = -6f;
+    // private float minSpeed = 12;
+    // private float maxSpeed = 16;
+    // private float maxTorque = 10;
+    private float xRange = 1;
+    private float ySpawnPos = 1;
     private float zRange = 0;
 
     public bool isGameActive;
@@ -27,10 +27,12 @@ public class TargetUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        // gameManagerTEST = GameObject.Find("GameMangerTest").GetComponent<GameManagerTest>();
+        // targetRb.AddForce(RandomForce(), ForceMode.Impulse); // add upwards force
+        // targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse); // apply rotation on objects, might not be needed
+
         targetRb = GetComponent<Rigidbody>(); // get GlimmWimm
-        gameManagerTEST = GameObject.Find("GameMangerTEST").GetComponent<GameManager>();
-        targetRb.AddForce(RandomForce(), ForceMode.Impulse); // add upwards force
-        targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse); // apply rotation on objects, might not be needed
         transform.position = RandomSpawnPos(); // spawn GlimmWimms
 
     }
@@ -47,9 +49,12 @@ public class TargetUI : MonoBehaviour
         {
             Destroy(gameObject);
             // gameManagerTEST.UpdateScore(pointValue);
+            Debug.Log("click");
+
         }
     }
 
+    /*
     Vector3 RandomForce()
     {
         return Vector3.up * Random.Range(minSpeed, maxSpeed);         
@@ -59,6 +64,7 @@ public class TargetUI : MonoBehaviour
     {
         return Random.Range(-maxTorque, maxTorque);
     }
+    */
 
     Vector3 RandomSpawnPos()
     {
