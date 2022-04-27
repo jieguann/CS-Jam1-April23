@@ -33,7 +33,28 @@ public class ObjectsControl : MonoBehaviour
         {
             GameObject glimmWimm = Instantiate(glimmWimmPrefab);
             glimmWimm.transform.position = this.transform.position;
+            glimmWimmPool.Add(glimmWimm);
             timeSinceSpawn = 0f;
+        }
+
+        for(int i = 0; i < glimmWimmPool.Count; i++)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit))
+                {
+                    //Select stage    
+                    if (hit.transform == glimmWimmPool[i].transform)
+                    {
+                        //SceneManager.LoadScene("SceneTwo");
+                        Destroy(glimmWimmPool[i]);
+                        glimmWimmPool.Remove(glimmWimmPool[i]);
+                        print("detect" + i);
+                    }
+                }
+            }
         }
     }
 }
