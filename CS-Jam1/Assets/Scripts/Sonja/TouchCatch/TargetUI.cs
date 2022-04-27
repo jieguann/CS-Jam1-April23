@@ -2,21 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class TargetUI : MonoBehaviour
 {
     [SerializeField] public Rigidbody targetRb;
-    public GameManagerTest gameManagerTEST;
+    public GameManager gameManager;
 
     // private float minSpeed = 12;
     // private float maxSpeed = 16;
     // private float maxTorque = 10;
-    private float xRange = 1;
-    private float ySpawnPos = 1;
-    private float zRange = 0;
+    // private float xRange = 1;
+    // private float ySpawnPos = 1;
+    // private float zRange = 0;
 
     public bool isGameActive;
 
-    public int pointValue; // must be aligned with Elias typing!!
+    // public int pointValue; // must be aligned with Elias typing!!
 
     private void Awake()
     {
@@ -33,7 +34,7 @@ public class TargetUI : MonoBehaviour
         // targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse); // apply rotation on objects, might not be needed
 
         targetRb = GetComponent<Rigidbody>(); // get GlimmWimm
-        transform.position = RandomSpawnPos(); // spawn GlimmWimms
+        //transform.position = RandomSpawnPos(); // spawn GlimmWimms
 
     }
 
@@ -45,7 +46,8 @@ public class TargetUI : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(gameManagerTEST)
+
+        if(gameManager)
         {
             Destroy(gameObject);
             // gameManagerTEST.UpdateScore(pointValue);
@@ -64,10 +66,11 @@ public class TargetUI : MonoBehaviour
     {
         return Random.Range(-maxTorque, maxTorque);
     }
-    */
+    
 
     Vector3 RandomSpawnPos()
     {
         return new Vector3(Random.Range(-xRange, xRange), ySpawnPos, zRange);
     }
+    */
 }

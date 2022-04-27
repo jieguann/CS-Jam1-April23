@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 4129513446636740746}
   - component: {fileID: 2481445756718635299}
   - component: {fileID: 5270173110909220208}
-  - component: {fileID: 4734718028211701259}
+  - component: {fileID: 8005660190718728690}
+  - component: {fileID: -3006599477230552123}
   m_Layer: 0
   m_Name: SonjaCubeGlimmCheck
   m_TagString: Untagged
@@ -130,7 +131,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -141,28 +142,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2242440131276538003}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b0593be8ba0e44f6ac9c894ef58d7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleSpeed: 1
-  turnSpeed: 1
+  idleSpeed: 5
+  turnSpeed: 5
   switchSeconds: 2
   idleRatio: 1
   animSpeedMinMax: {x: 1, y: 5}
   moveSpeedMinMax: {x: 1, y: 5}
-  changeAnimEveryFromTo: {x: 1, y: 2}
-  changeTargetEveryFromTo: {x: 1, y: 5}
+  changeAnimEveryFromTo: {x: 0.01, y: 0.01}
+  changeTargetEveryFromTo: {x: 0.01, y: 0.01}
   homeTarget: {fileID: 2433799302937825075, guid: f18f0c254447f4957a8f541830febef2, type: 3}
   flyingTarget: {fileID: 1933119990784133567, guid: e42132402491f4bd18fe840f02bb49f2, type: 3}
   radiusMinMax: {x: 0.01, y: 0.05}
   yMinMax: {x: 0.01, y: 0.05}
-  returnToBase: 1
+  returnToBase: 0
   randomBaseOffset: 1
   delayStart: 0.5
   changeTarget: 0.3
---- !u!114 &4734718028211701259
+--- !u!114 &8005660190718728690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,10 +172,63 @@ MonoBehaviour:
   m_GameObject: {fileID: 2242440131276538003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79f7c92aa16a6445e85c84439a78c263, type: 3}
+  m_Script: {fileID: 11500000, guid: 64d9396d4d3a16443a37473508447e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRb: {fileID: 2481445756718635299}
-  gameManagerTEST: {fileID: 0}
-  isGameActive: 1
-  pointValue: 2
+  pointsAssigned: 3
+--- !u!114 &-3006599477230552123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2242440131276538003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8005660190718728690}
+        m_TargetAssemblyTypeName: EarnPoints, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
