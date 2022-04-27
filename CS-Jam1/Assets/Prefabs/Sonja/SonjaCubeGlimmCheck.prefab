@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4129513446636740746}
   - component: {fileID: 2481445756718635299}
   - component: {fileID: 5270173110909220208}
+  - component: {fileID: 4734718028211701259}
   m_Layer: 0
   m_Name: SonjaCubeGlimmCheck
   m_TagString: Untagged
@@ -161,3 +162,19 @@ MonoBehaviour:
   randomBaseOffset: 1
   delayStart: 0.5
   changeTarget: 0.3
+--- !u!114 &4734718028211701259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2242440131276538003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f7c92aa16a6445e85c84439a78c263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRb: {fileID: 2481445756718635299}
+  gameManagerTEST: {fileID: 0}
+  isGameActive: 1
+  pointValue: 2

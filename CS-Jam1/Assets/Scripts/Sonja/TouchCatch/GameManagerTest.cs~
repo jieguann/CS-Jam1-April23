@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+
+public class GameManagerTest : MonoBehaviour
+{
+    public List<GameObject> targets;
+    // scoreText
+    // gameOverText
+    public Button restartButton;
+    public GameObject titleScreen;
+
+    public bool isGameActive;
+    private int score;
+    private float spawnRate = 1.0f;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    IEnumerator SpawnTarget()
+    {
+        while (isGameActive)
+        {
+            yield return new WaitForSeconds(spawnRate); // controls time between spawns
+            int index = Random.Range(0, targets.Count); // get random object from list
+            Instantiate(targets[index]);            
+        }
+    }
+}

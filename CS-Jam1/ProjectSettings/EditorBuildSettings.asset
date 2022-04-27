@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/GlimmWimm.unity
     guid: 40d440c954120af44a7b950075e1cb7d
+  - enabled: 0
+    path: Assets/Scenes/GlimmWimmEntrance.unity
+    guid: 363d9c8d2e2bf44a187e26975c822a0e
+  - enabled: 1
+    path: Assets/Scenes/SonjaTestScene.unity
+    guid: 915f4b7a5915444d582067091cb2753b
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a65dfb0bfcdd3014187360b0d2bc37a8, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 3057061de3de74ab1bce61d0a5e9e066, type: 2}
