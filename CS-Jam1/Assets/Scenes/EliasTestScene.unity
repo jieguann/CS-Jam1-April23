@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -536,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e066094721e84cd45bc77a698c6d280d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsAssigned: 5
+  pointsAssigned: 70
   m_explosionParticle: {fileID: 19888620, guid: 71f41880794ca1941a088c95db570547, type: 3}
 --- !u!1 &1678423342
 GameObject:
@@ -1137,9 +1137,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3006599477230552123, guid: 7a3fb25e836fe44f292e527f41f722c3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2242440131276538003, guid: 7a3fb25e836fe44f292e527f41f722c3, type: 3}
       propertyPath: m_Name
-      value: SonjaCube
+      value: FunctionalCube
       objectReference: {fileID: 0}
     - target: {fileID: 2242440131276538007, guid: 7a3fb25e836fe44f292e527f41f722c3, type: 3}
       propertyPath: m_RootOrder
@@ -1185,6 +1189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -33.426
       objectReference: {fileID: 0}
+    - target: {fileID: 6776014953933946423, guid: 7a3fb25e836fe44f292e527f41f722c3, type: 3}
+      propertyPath: m_explosionParticle
+      value: 
+      objectReference: {fileID: 19888620, guid: 71f41880794ca1941a088c95db570547, type: 3}
     - target: {fileID: 8005660190718728690, guid: 7a3fb25e836fe44f292e527f41f722c3, type: 3}
       propertyPath: pointsAssigned
       value: 5
