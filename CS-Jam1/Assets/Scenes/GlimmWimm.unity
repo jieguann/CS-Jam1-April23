@@ -263,6 +263,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsAssigned: 5
+  m_explosionParticle: {fileID: 19888620, guid: 71f41880794ca1941a088c95db570547, type: 3}
+--- !u!114 &698106594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698106588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 698106589}
+          m_TargetAssemblyTypeName: EarnPoints, Assembly-CSharp
+          m_MethodName: OnClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &749496021
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +356,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsAssigned: 5
+  m_explosionParticle: {fileID: 19888620, guid: 71f41880794ca1941a088c95db570547, type: 3}
+--- !u!114 &833192858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833192852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 833192853}
+          m_TargetAssemblyTypeName: EarnPoints, Assembly-CSharp
+          m_MethodName: OnClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1261430422
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,6 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsAssigned: 5
+  m_explosionParticle: {fileID: 19888620, guid: 71f41880794ca1941a088c95db570547, type: 3}
 --- !u!114 &1261430429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +544,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsAssigned: 5
+  m_explosionParticle: {fileID: 19888620, guid: 71f41880794ca1941a088c95db570547, type: 3}
+--- !u!114 &1435760388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435760378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1435760379}
+          m_TargetAssemblyTypeName: EarnPoints, Assembly-CSharp
+          m_MethodName: OnClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1465792169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1933119990784133563, guid: e42132402491f4bd18fe840f02bb49f2, type: 3}
@@ -501,6 +592,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsAssigned: 5
+  m_explosionParticle: {fileID: 19888620, guid: 71f41880794ca1941a088c95db570547, type: 3}
+--- !u!114 &1465792175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465792169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1465792170}
+          m_TargetAssemblyTypeName: EarnPoints, Assembly-CSharp
+          m_MethodName: OnClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1678423342
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsAssigned: 5
+  m_explosionParticle: {fileID: 0}
 --- !u!4 &1833423507
 Transform:
   m_ObjectHideFlags: 0

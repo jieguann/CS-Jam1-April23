@@ -6,7 +6,7 @@ public class EarnPoints : MonoBehaviour
 {
     [SerializeField] public int pointsAssigned;
 
-    //public ParticleSystem explosionParticle;
+    public ParticleSystem m_explosionParticle;
 
     Ray ray;
     RaycastHit hit;
@@ -16,6 +16,8 @@ public class EarnPoints : MonoBehaviour
     public void OnClick()
     {
         GameManager.s_instance.AddScore(pointsAssigned);
+        Instantiate(m_explosionParticle, transform.position, m_explosionParticle.transform.rotation);
+        Destroy(gameObject);
 
         //Debug.Log("points granted" + pointsAssigned);
     }
