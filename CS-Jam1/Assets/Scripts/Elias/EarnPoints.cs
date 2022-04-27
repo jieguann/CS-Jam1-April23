@@ -6,20 +6,19 @@ public class EarnPoints : MonoBehaviour
 {
     [SerializeField] public int pointsAssigned;
 
+    //public ParticleSystem explosionParticle;
+
     Ray ray;
     RaycastHit hit;
 
     // Update is called once per frame
-    void Update()
+
+    public void OnClick()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            GameManager.s_instance.AddScore(pointsAssigned); 
-            Debug.Log("points granted" + pointsAssigned);
-        }
+        GameManager.s_instance.AddScore(pointsAssigned);
 
+        //Debug.Log("points granted" + pointsAssigned);
     }
-
     /*void Update()
     {
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);

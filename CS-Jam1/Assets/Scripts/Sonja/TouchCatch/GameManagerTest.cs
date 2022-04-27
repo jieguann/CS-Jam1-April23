@@ -52,10 +52,12 @@ public class GameManagerTest : MonoBehaviour
         // isGameActive(false);
     }
 
+    /*
     public void RestartGame()
     {
         
     }
+    */
 
     public void StartGame(int level)
     {
@@ -67,6 +69,6 @@ public class GameManagerTest : MonoBehaviour
 
         titleScreen.gameObject.SetActive(false);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(level);
     }
 }
