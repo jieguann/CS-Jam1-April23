@@ -18,7 +18,6 @@ public class EarnPointsTesting : MonoBehaviour
     {
         GameManager.s_instance.AddScore(pointsAssigned);
 
-        Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
         //Debug.Log("points granted" + pointsAssigned);
     }
     /*void Update()
