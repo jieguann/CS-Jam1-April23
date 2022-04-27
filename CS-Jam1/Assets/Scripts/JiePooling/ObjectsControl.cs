@@ -16,7 +16,7 @@ public class ObjectsControl : MonoBehaviour
     private int poolStartSize = 5;
     private int poolMaxSize = 5;
 
-    private float timeToSpawn = 5f;
+    [SerializeField] private float timeToSpawn = 5f;
     private float timeSinceSpawn;
 
     // Start is called before the first frame update
