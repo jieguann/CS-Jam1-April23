@@ -19,7 +19,7 @@ public class EarnPoints : MonoBehaviour
         Instantiate(m_explosionParticle, transform.position, m_explosionParticle.transform.rotation);
         Destroy(gameObject);
 
-        //Debug.Log("points granted" + pointsAssigned);
+        Debug.Log("points granted" + pointsAssigned);
     }
 
     /*void Update()
