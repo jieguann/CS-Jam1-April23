@@ -500,5 +500,9 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 840193773}
+    - target: {fileID: 9175416076453450822, guid: f087cc07e00104ba7879e316d8d2da29, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f087cc07e00104ba7879e316d8d2da29, type: 3}
