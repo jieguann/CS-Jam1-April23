@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int points)
     {
         m_currentScore += points;
-        m_currentScoreText.text = "Current Score: " + m_currentScore.ToString();
+        m_currentScoreText.text =  m_currentScore.ToString();
 
         if (m_currentScore > m_highScore)
         {
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             SaveData data = JsonUtility.FromJson<SaveData>(json);//convert back from jason to data variablee
 
             m_highScore = int.Parse(data.highScore);
-            m_highScoreText.text = "High Score: " + m_highScore.ToString();
+            m_highScoreText.text =  m_highScore.ToString();
 
         }
     }
