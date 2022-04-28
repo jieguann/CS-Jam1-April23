@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/GlimmWimm.unity
     guid: 40d440c954120af44a7b950075e1cb7d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GlimmWimmEntrance.unity
     guid: 363d9c8d2e2bf44a187e26975c822a0e
   - enabled: 0
@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EliasTestScene.unity
     guid: abcbd434f2aeb704ba5e90d742df098f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HighScore.unity
     guid: b38ac4541124346c9899458736620fc8
   - enabled: 1
