@@ -881,7 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21effd6da78189c459399ebea4574731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glimmWimmPrefab: {fileID: 1792426792898394132, guid: b19a6fb010c11430cb6f2c6560e62373, type: 3}
+  glimmWimmPrefab: {fileID: 6334461577443327934, guid: 1181e4d5a084ecc47809673caaa50aef, type: 3}
   glimmWimmPool: []
   poolStartSize: 5
   timeToSpawn: 2
