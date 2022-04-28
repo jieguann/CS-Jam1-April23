@@ -21,6 +21,12 @@ public class GameManager : MonoBehaviour
     bool isGameActive;
     private float spawnRate;
 
+    // added for CountDownTimer
+    public int HighScoreScene;
+    public float timer = 3f;
+    public TextMeshProUGUI timerSeconds;
+
+
     public void AddScore(int points)
     {
         m_currentScore += points;
@@ -57,7 +63,19 @@ public class GameManager : MonoBehaviour
 
         }
     }
-  
+
+    // added for CountDownTimer
+    void Update()
+    {
+        timer -= Time.deltaTime;
+        timerSeconds.text = timer.ToString("f2");
+        if (timer <= 0)
+        {
+            SceneManager.LoadScene(HighScoreScene);
+
+        }
+    }
+
     // added for playButton -> wait one second until GlimmWimms show up
     IEnumerator SpawnTarget()
     {

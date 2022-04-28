@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class CountDownTimer : MonoBehaviour
 {
-    public int level;
+    public int HighScoreScene;
     public GameManager gameManager;
 
     public float timer = 3f;
-    [SerializeField] private TextMeshProUGUI timerSeconds;
+    [SerializeField] public TextMeshProUGUI timerSeconds;
 
 
     // Start is called before the first frame update
@@ -23,10 +23,11 @@ public class CountDownTimer : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        timerSeconds.text = timer.ToString("f2");
+        timerSeconds.text = "Timer" + timer.ToString("f2");
         if(timer <= 0)
         {
-            SceneManager.LoadScene(level);
+            SceneManager.LoadScene(HighScoreScene);
+
         }
 
     }
