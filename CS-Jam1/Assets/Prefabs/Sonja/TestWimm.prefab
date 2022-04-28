@@ -161,7 +161,7 @@ MonoBehaviour:
   radiusMinMax: {x: 1, y: 5}
   yMinMax: {x: 1, y: 5}
   returnToBase: 0
-  randomBaseOffset: 5
+  randomBaseOffset: 3
   delayStart: 0
   changeTarget: 0
 --- !u!114 &6062262492280199551
