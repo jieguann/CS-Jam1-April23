@@ -37,7 +37,7 @@ public class ObjectsControl : MonoBehaviour
             timeSinceSpawn = 0f;
         }
 
-        for(int i = 0; i < glimmWimmPool.Count; i++)
+        /*for(int i = 0; i < glimmWimmPool.Count; i++)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -55,6 +55,6 @@ public class ObjectsControl : MonoBehaviour
                     }
                 }
             }
-        }
+        }*/
     }
 }
