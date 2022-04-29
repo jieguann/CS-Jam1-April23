@@ -178,6 +178,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: AR Session Origin
       objectReference: {fileID: 0}
+    - target: {fileID: 1212403882705349986, guid: bc61dab7f73974993961015f2770d72b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212403882705349986, guid: bc61dab7f73974993961015f2770d72b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc61dab7f73974993961015f2770d72b, type: 3}
 --- !u!1001 &659574782
