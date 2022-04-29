@@ -180,6 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc61dab7f73974993961015f2770d72b, type: 3}
+<<<<<<< Updated upstream
 --- !u!114 &840193773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,17 +188,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 6965913980378340676}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536533488}
+=======
+--- !u!114 &840193773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6965913979607878569, guid: cea1824d846eb4df0a76784138d1c1fd, type: 3}
+  m_PrefabInstance: {fileID: 6965913980378340676}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aeb15cc1b6e55ff41b73948f4b585eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   m_highScoreText: {fileID: 1334206163}
   m_currentScoreText: {fileID: 1318732536}
   entranceCanvas: {fileID: 1525104761}
   HighScoreScene: 0
   timer: 3
   timerSeconds: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &992046401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,6 +294,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9175416075420774551, guid: f087cc07e00104ba7879e316d8d2da29, type: 3}
   m_PrefabInstance: {fileID: 9175416076920058094}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!1 &1536533488
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +326,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &4530113280380005809
 PrefabInstance:
   m_ObjectHideFlags: 0
