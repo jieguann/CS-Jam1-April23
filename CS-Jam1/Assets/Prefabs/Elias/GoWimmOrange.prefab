@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5306960796551277063}
   - component: {fileID: 5306960796551277062}
   - component: {fileID: 5306960796551277061}
-  - component: {fileID: 5306960796551277060}
   - component: {fileID: 5306960796551277059}
   - component: {fileID: 5306960796551277058}
+  - component: {fileID: 4195611716212159208}
   m_Layer: 0
   m_Name: GoWimmOrange
   m_TagString: Untagged
@@ -135,34 +135,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5306960796551277060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5306960796551277057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b0593be8ba0e44f6ac9c894ef58d7d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idleSpeed: 5
-  turnSpeed: 5
-  switchSeconds: 5
-  idleRatio: 1
-  animSpeedMinMax: {x: 1, y: 5}
-  moveSpeedMinMax: {x: 1, y: 5}
-  changeAnimEveryFromTo: {x: 1, y: 5}
-  changeTargetEveryFromTo: {x: 1, y: 5}
-  homeTarget: {fileID: 1238111660637711843, guid: 48f42751823bd454f9207188444a1ae4, type: 3}
-  flyingTarget: {fileID: 1238111660637711843, guid: 48f42751823bd454f9207188444a1ae4, type: 3}
-  radiusMinMax: {x: 0.01, y: 0.05}
-  yMinMax: {x: 0.01, y: 0.05}
-  returnToBase: 0
-  randomBaseOffset: 5
-  delayStart: 0.1
-  changeTarget: 0.3
 --- !u!114 &5306960796551277059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,3 +178,27 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &4195611716212159208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5306960796551277057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6d973d9b91c724da4c2806d40f077c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets: []
+  m_minSpeed: 0.5
+  m_maxSpeed: 3
+  m_minTargets: 7
+  m_maxTargets: 12
+  m_minX: -4
+  m_maxX: 4
+  m_minY: -1
+  m_maxY: 4
+  m_minZ: -4
+  m_maxZ: 4
+  m_redirectOdds: 500
