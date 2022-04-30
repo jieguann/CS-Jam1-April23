@@ -196,6 +196,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3813478142774925228, guid: 18dc0a53fe3b44a999b66eeeae568ff3, type: 3}
+      propertyPath: timer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813478142774925228, guid: 18dc0a53fe3b44a999b66eeeae568ff3, type: 3}
       propertyPath: entranceCanvas
       value: 
       objectReference: {fileID: 1525104761}
