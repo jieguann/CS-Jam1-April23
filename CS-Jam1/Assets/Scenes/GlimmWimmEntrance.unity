@@ -204,6 +204,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1525104761}
     - target: {fileID: 3813478142774925228, guid: 18dc0a53fe3b44a999b66eeeae568ff3, type: 3}
+      propertyPath: NextSceneToLoad
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813478142774925228, guid: 18dc0a53fe3b44a999b66eeeae568ff3, type: 3}
       propertyPath: m_highScoreText
       value: 
       objectReference: {fileID: 9175416076920058096}

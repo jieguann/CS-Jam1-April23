@@ -22,7 +22,9 @@ public class GameManager : MonoBehaviour
     private float spawnRate;
 
     // added for CountDownTimer
-    public int HighScoreScene;
+    public int NextSceneToLoad;
+    
+
     public float timer = 3f;
     public TMP_Text timerSeconds;
 
@@ -71,7 +73,7 @@ public class GameManager : MonoBehaviour
         timerSeconds.text = timer.ToString("f2");
         if (timer <= 0)
         {
-            SceneManager.LoadScene(HighScoreScene);
+            SceneManager.LoadScene(NextSceneToLoad);
 
         }
     }

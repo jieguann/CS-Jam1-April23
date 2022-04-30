@@ -2426,7 +2426,7 @@ MonoBehaviour:
   m_highScoreText: {fileID: 1715390063}
   m_currentScoreText: {fileID: 942607910}
   entranceCanvas: {fileID: 1823281583}
-  HighScoreScene: 0
+  NextSceneToLoad: 1
   timer: 3
   timerSeconds: {fileID: 0}
 --- !u!1 &6965913979856541955
