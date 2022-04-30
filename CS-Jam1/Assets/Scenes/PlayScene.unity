@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoWimmOrange
       objectReference: {fileID: 0}
+    - target: {fileID: 5306960796551277059, guid: 5f3e718a5f9fe69419b6c930ac62d3bc, type: 3}
+      propertyPath: pointsAssigned
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5306960796551277066, guid: 5f3e718a5f9fe69419b6c930ac62d3bc, type: 3}
       propertyPath: m_RootOrder
       value: 11
