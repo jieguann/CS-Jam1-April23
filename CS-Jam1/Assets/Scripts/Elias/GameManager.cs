@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     // added for CountDownTimer
     public int HighScoreScene;
     public float timer = 3f;
-    public TextMeshProUGUI timerSeconds;
+    public TMP_Text timerSeconds;
 
 
     public void AddScore(int points)

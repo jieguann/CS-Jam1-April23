@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0104001695, g: 0.00945966, b: 0.005103927, a: 1}
+  m_IndirectSpecularColor: {r: 0.010403737, g: 0.009463742, b: 0.005109184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2426,6 +2426,9 @@ MonoBehaviour:
   m_highScoreText: {fileID: 1715390063}
   m_currentScoreText: {fileID: 942607910}
   entranceCanvas: {fileID: 1823281583}
+  HighScoreScene: 0
+  timer: 3
+  timerSeconds: {fileID: 0}
 --- !u!1 &6965913979856541955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,7 +2445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8160418329164860732
 RectTransform:
   m_ObjectHideFlags: 0
