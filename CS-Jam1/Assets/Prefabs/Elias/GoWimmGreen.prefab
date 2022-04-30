@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4487038669968398889
+--- !u!1 &4011140434961371224
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4487038669968398880}
-  - component: {fileID: 4487038669968398895}
-  - component: {fileID: 4487038669968398894}
-  - component: {fileID: 4487038669968398893}
-  - component: {fileID: 4487038669968398892}
-  - component: {fileID: 4487038669968398891}
-  - component: {fileID: 4487038669968398890}
-  - component: {fileID: 4487038669968398881}
-  - component: {fileID: 4487038669968398882}
+  - component: {fileID: 4011140434961371219}
+  - component: {fileID: 4011140434961371216}
+  - component: {fileID: 4011140434961371217}
+  - component: {fileID: 4011140434961371230}
+  - component: {fileID: 4011140434961371231}
+  - component: {fileID: 4011140434961371228}
+  - component: {fileID: 4011140434961371229}
+  - component: {fileID: 4011140434961371226}
+  - component: {fileID: 4011140434961371227}
   m_Layer: 0
-  m_Name: GoWimm
+  m_Name: GoWimmGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4487038669968398880
+--- !u!4 &4011140434961371219
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17, y: -0.116, z: 3.52}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0, y: 1.108, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4487038669968398895
+--- !u!33 &4011140434961371216
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &4487038669968398894
+--- !u!23 &4011140434961371217
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5fbd668a6d3e0e34e88bd9bc1665cd08, type: 2}
+  - {fileID: 2100000, guid: 4213928e76e40cb48a15f36b23d89830, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87,27 +87,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &4487038669968398893
+--- !u!135 &4011140434961371230
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &4487038669968398892
+--- !u!95 &4011140434961371231
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
@@ -119,13 +119,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &4487038669968398891
+--- !u!54 &4011140434961371228
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -135,13 +135,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4487038669968398890
+--- !u!114 &4011140434961371229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b0593be8ba0e44f6ac9c894ef58d7d1, type: 3}
@@ -163,13 +163,13 @@ MonoBehaviour:
   randomBaseOffset: 5
   delayStart: 0.1
   changeTarget: 0.3
---- !u!114 &4487038669968398881
+--- !u!114 &4011140434961371226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64d9396d4d3a16443a37473508447e9a, type: 3}
@@ -177,13 +177,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsAssigned: 2
   m_explosionParticle: {fileID: 7645130143101835430, guid: 3d6b9dad75f7698408f167d88ea39185, type: 3}
---- !u!114 &4487038669968398882
+--- !u!114 &4011140434961371227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4487038669968398889}
+  m_GameObject: {fileID: 4011140434961371224}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
@@ -194,7 +194,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4487038669968398881}
+        - m_Target: {fileID: 4011140434961371226}
           m_TargetAssemblyTypeName: EarnPoints, Assembly-CSharp
           m_MethodName: OnClick
           m_Mode: 1

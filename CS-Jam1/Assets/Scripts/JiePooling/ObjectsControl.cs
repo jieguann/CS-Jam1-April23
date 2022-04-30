@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectsControl : MonoBehaviour
 {
     [SerializeField]
-    private GameObject glimmWimmPrefab;
+    private GameObject [] glimmWimmPrefab;
 
     // queue which holds reference to all the gameObjects
     [SerializeField]
@@ -31,7 +31,9 @@ public class ObjectsControl : MonoBehaviour
         timeSinceSpawn += Time.deltaTime;
         if (timeSinceSpawn >= timeToSpawn)
         {
-            GameObject glimmWimm = Instantiate(glimmWimmPrefab);
+            int glimmWimmPrefabIndex = Random.Range(0, glimmWimmPrefab.Length);
+
+            GameObject glimmWimm = Instantiate(glimmWimmPrefab[glimmWimmPrefabIndex]);
             glimmWimm.transform.position = this.transform.position;
             glimmWimmPool.Add(glimmWimm);
             timeSinceSpawn = 0f;

@@ -11,7 +11,6 @@ public class Spawner : MonoBehaviour
     private ObjectPool_Simple objectPool;
     
 
-
     // Start is called before the first frame update
     void Start()
     {
