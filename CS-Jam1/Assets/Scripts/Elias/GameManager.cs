@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     private int m_currentScore;
     private int m_highScore;
-    //private string m_scoreKey = "HighScore";//used in player prefs approach?
+    private string m_scoreKey = "HighScore";//used in player prefs approach?
 
     // added for play and screenSwitch
     public GameObject entranceCanvas;
@@ -54,16 +54,24 @@ public class GameManager : MonoBehaviour
             Debug.LogError("mltiple singleton instances!");
         }
 
-        if (File.Exists(Application.dataPath + "/SaveData.json"))
-        //if(PlayerPrefs.HasKey("HighScore"))if  using Playerprefs use this line. player prefs  when thhiings get more complicated
+        //if (File.Exists(Application.dataPath + "/SaveData.json"))
+        if(PlayerPrefs.HasKey("HighScore"))//if  using Playerprefs use this line. player prefs  when thhiings get more complicated
         {
-            string json = File.ReadAllText(Application.dataPath + "/SaveData.json");//reads text file
-            SaveData data = JsonUtility.FromJson<SaveData>(json);//convert back from jason to data variablee
+                m_highScore = PlayerPrefs.GetInt(m_scoreKey);
 
-            m_highScore = int.Parse(data.highScore);
-            m_highScoreText.text =  m_highScore.ToString();
+                //string json = File.ReadAllText(Application.dataPath + "/SaveData.json");//reads text file
+                //SaveData data = JsonUtility.FromJson<SaveData>(json);//convert back from jason to data variablee
+
+                //m_highScore = int.Parse(data.highScore);
+                //m_highScoreText.text =  m_highScore.ToString();
 
         }
+        else
+        {
+            m_highScore = 0;
+
+        }
+        m_highScoreText.text = m_highScore.ToString();
     }
 
     // added for CountDownTimer
@@ -76,10 +84,12 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(NextSceneToLoad);
             if (m_currentScore >= m_highScore)
             {
-                SaveData data = new SaveData();//gets refeerence to the class
-                data.highScore = m_highScore.ToString();//assigns value
-                string json = JsonUtility.ToJson(data);//converts data into jason format..ovnverts to string
-                File.WriteAllText(Application.dataPath + "/SaveData.json", json);//strng gets written to file
+                m_highScore = m_currentScore;
+                PlayerPrefs.SetInt(m_scoreKey, m_highScore);
+                //SaveData data = new SaveData();//gets refeerence to the class
+                //data.highScore = m_highScore.ToString();//assigns value
+                //string json = JsonUtility.ToJson(data);//converts data into jason format..ovnverts to string
+                //File.WriteAllText(Application.dataPath + "/SaveData.json", json);//strng gets written to file
             }
 
         }
@@ -111,10 +121,12 @@ public class GameManager : MonoBehaviour
     {
         if (m_currentScore >= m_highScore)
         {
-            SaveData data = new SaveData();//gets refeerence to the class
-            data.highScore = m_highScore.ToString();//assigns value
-            string json = JsonUtility.ToJson(data);//converts data into jason format..ovnverts to string
-            File.WriteAllText(Application.dataPath + "/SaveData.json", json);//strng gets written to file
+            m_highScore = m_currentScore;
+            PlayerPrefs.SetInt(m_scoreKey, m_highScore);
+            //SaveData data = new SaveData();//gets refeerence to the class
+            //data.highScore = m_highScore.ToString();//assigns value
+            //string json = JsonUtility.ToJson(data);//converts data into jason format..ovnverts to string
+            //File.WriteAllText(Application.dataPath + "/SaveData.json", json);//strng gets written to file
         }
     }
 }
