@@ -74,6 +74,13 @@ public class GameManager : MonoBehaviour
         if (timer <= 0)
         {
             SceneManager.LoadScene(NextSceneToLoad);
+            if (m_currentScore >= m_highScore)
+            {
+                SaveData data = new SaveData();//gets refeerence to the class
+                data.highScore = m_highScore.ToString();//assigns value
+                string json = JsonUtility.ToJson(data);//converts data into jason format..ovnverts to string
+                File.WriteAllText(Application.dataPath + "/SaveData.json", json);//strng gets written to file
+            }
 
         }
     }
