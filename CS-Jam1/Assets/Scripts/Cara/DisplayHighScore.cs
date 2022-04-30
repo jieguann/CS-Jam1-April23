@@ -11,12 +11,15 @@ public class DisplayHighScore : MonoBehaviour
 
     void Awake()
     {
+        
         if (PlayerPrefs.HasKey(m_highScoreKey))
         {
-            m_highScoreText.text = PlayerPrefs.GetString(m_highScoreKey);
+           
+            m_highScoreText.text = PlayerPrefs.GetInt(m_highScoreKey).ToString();
         }
         else
         {
+         
             m_highScoreText.text = "0";
         }
     }
